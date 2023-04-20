@@ -24,9 +24,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Ambient: 0.5
+    - _Ambient: 0.106
     - _AmbientInt: 0.803
-    - _LightInt: 1
+    - _LightInt: 0.711
     - _Plasma: 0.1
     - _Scale1: 5
     - _Scale2: 5
