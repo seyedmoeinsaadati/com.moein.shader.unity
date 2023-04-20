@@ -93,7 +93,7 @@ Material:
     - _Parallax: 0.02
     - _Reverse: 1
     - _ShadowCull: 2
-    - _Smoothness: 0.358
+    - _Smoothness: 0.099
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 10
