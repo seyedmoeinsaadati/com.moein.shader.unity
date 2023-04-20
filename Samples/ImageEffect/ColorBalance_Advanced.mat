@@ -9,8 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ColorBalance_Advanced
   m_Shader: {fileID: 4800000, guid: 26e2d178b8f9df14fb1d2034adfb5b67, type: 3}
-  m_ShaderKeywords: _COLORMODE_ADD _COLORTOGGLE_ON _COLOR_TOGGLE_ON _CONTRASTTOGGLE_ON
-    _MODE_MULTIPLY
+  m_ShaderKeywords: _COLORMODE_ADD _COLOR_TOGGLE_ON _MODE_MULTIPLY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -63,9 +62,9 @@ Material:
     - _Brightness: 1
     - _BumpScale: 1
     - _ColorMode: 1
-    - _ColorToggle: 1
+    - _ColorToggle: 0
     - _Color_Toggle: 1
-    - _ContrastToggle: 1
+    - _ContrastToggle: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
