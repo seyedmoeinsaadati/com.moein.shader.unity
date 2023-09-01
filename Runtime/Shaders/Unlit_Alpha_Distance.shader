@@ -11,10 +11,14 @@
         _ZWrite("Z Write", Float)  = 0
         [KeywordEnum(Less, Less, Greater,Greater,LEqual,LEqual,GEqual,GEqual,Equal,Equal,NotEqual,NotEqual,Always,Always)]
         _ZTest("Z Test", Int)  = 2
+
+        [Enum(UnityEngine.Rendering.CullMode)]
+        _Cull("Cull", Float) = 0
     }
     SubShader
     {
         Tags { "RenderType" = "Transparent" "Queue"= "Transparent"}
+        Cull [_Cull]
 
         ZWrite [_ZWrite]
         ZTest [_ZTest]

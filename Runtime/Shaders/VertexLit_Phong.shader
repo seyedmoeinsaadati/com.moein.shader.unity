@@ -14,11 +14,15 @@
         [HDR]
         _SpecularColor("Specular Color", Color) = (1,1,1,1)
         [PowerSlider(2.0)]_SpecularPow("Specular Power", Range(0.0, 1024.0)) = 64
+
+        [Enum(UnityEngine.Rendering.CullMode)]
+        _Cull("Cull", Float) = 0
     }
     SubShader
     {
         Tags { "RenderType"="Opaque" "LightMode"="ForwardBase"}
-
+        Cull [_Cull]
+        
         Pass
         {
             CGPROGRAM

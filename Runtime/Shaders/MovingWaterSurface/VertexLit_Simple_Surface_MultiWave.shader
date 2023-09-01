@@ -33,12 +33,16 @@
         _Radius3 ("Radius 3", Range(0.0, 0.5)) = 0.3
         _MovingSpeedX3("Moving Speed X 3", Float) = 0
         _MovingSpeedZ3("Moving Spedd Y 3", Float) = 0
+
+        [Enum(UnityEngine.Rendering.CullMode)]
+        _Cull("Cull", Float) = 0
         
     }
     SubShader
     {
         Tags {"RenderType"="Opaque" "LightMode"="ForwardBase"}
-
+        Cull [_Cull]
+        
         Pass
         {
             CGPROGRAM

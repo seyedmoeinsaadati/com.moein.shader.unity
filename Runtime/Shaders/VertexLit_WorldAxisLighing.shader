@@ -19,11 +19,14 @@
         _Ambient ("Global Ambient", Float) = 0
         _AmbientInt("Ambient Intensity", Range(0, 1)) = 1
 
+        [Enum(UnityEngine.Rendering.CullMode)]
+        _Cull("Cull", Float) = 0
     }
     SubShader
     {
         Tags { "RenderType" = "Opaque"}
-
+        Cull [_Cull]
+        
         Pass
         {
             CGPROGRAM

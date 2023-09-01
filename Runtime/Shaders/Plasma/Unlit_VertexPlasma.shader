@@ -15,10 +15,14 @@
 		_Scale2("Horizontal Scale", Float) = 2
 		_Scale3("Diagonal Scale", Float) = 2
 		_Scale4("Circular Scale", Float) = 2
+
+        [Enum(UnityEngine.Rendering.CullMode)]
+        _Cull("Cull", Float) = 0
     }
     SubShader
     {
         Tags { "RenderType" = "Opaque"}
+        Cull [_Cull]
 
         Pass
         {

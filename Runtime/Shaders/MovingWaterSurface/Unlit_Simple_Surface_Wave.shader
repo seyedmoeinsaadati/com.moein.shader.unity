@@ -14,10 +14,14 @@
         _Radius ("Radius", Range(0.0, 0.5)) = 0.3
         _MovingSpeedX("Moving Speed X", Float) = 0
         _MovingSpeedZ("Moving Spedd Y", Float) = 0
+
+        [Enum(UnityEngine.Rendering.CullMode)]
+        _Cull("Cull", Float) = 0
     }
     SubShader
     {
         Tags {"RenderType"="Opaque"}
+        Cull [_Cull]
         
         Pass
         {
