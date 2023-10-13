@@ -1,7 +1,7 @@
 {
   "name": "com.moein.shader.unity",
   "displayName": "Shaders",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "unity": "2019.1",
   "author": {
     "name": "Moein Saadati",
@@ -21,5 +21,32 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/seyedmoeinsaadati/com.moein.shader.unity.git"
-  }
+  },
+  "samples": [
+    {
+        "displayName": "Alpha Distance",
+        "description": "",
+        "path": "Samples/Alpha_Distance"
+    },
+    {
+        "displayName": "Depth",
+        "description": "",
+        "path": "Samples/Depth"
+    },
+    {
+        "displayName": "ImageEffect",
+        "description": "",
+        "path": "Samples/ImageEffect"
+    },
+    {
+        "displayName": "Lowpoly Water Surface",
+        "description": "",
+        "path": "Samples/MovingWaterSurface"
+    },
+    {
+        "displayName": "Plasma",
+        "description": "",
+        "path": "Samples/Plasma"
+    }
+  ]
 }

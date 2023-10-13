@@ -18,6 +18,8 @@
         [Toggle] _ContrastToggle("Contrast", Float) = 0
         _MinContrast("Min", Range(0, 1)) = 0
         _MaxContrast("Max", Range(0, 1)) = 1
+
+        [Toggle] _ColorInvertToggle("Color Invert", Float) = 0
     }
 
     SubShader
@@ -34,6 +36,7 @@
             #pragma multi_compile __ _COLORTOGGLE_ON
             #pragma multi_compile __ _CONTRASTTOGGLE_ON
             #pragma multi_compile __ _GRAYSCALETOGGLE_ON
+            #pragma multi_compile __ _COLORINVERTTOGGLE_ON
             
             #include "UnityCG.cginc"
 
@@ -99,8 +102,13 @@
 #endif
 
                 col *= _Brightness;
+
+#if _COLORINVERTTOGGLE_ON
+                return 1-col;
+#else
                 return col;
-            }
+#endif
+                }
             ENDCG
         }
     }

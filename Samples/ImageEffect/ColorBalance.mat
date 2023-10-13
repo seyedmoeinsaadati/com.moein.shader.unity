@@ -62,6 +62,7 @@ Material:
     - _BlueMinContrast: 0
     - _Brightness: 1
     - _BumpScale: 1
+    - _ColorInvertToggle: 0
     - _ColorMode: 1
     - _ColorToggle: 1
     - _Color_Toggle: 1
@@ -85,7 +86,7 @@ Material:
     - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ROffset: 0.194
+    - _ROffset: 0
     - _RedMaxContrast: 1
     - _RedMinContrast: 0
     - _SmoothnessTextureChannel: 0

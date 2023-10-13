@@ -32,7 +32,6 @@ Shader "Moein/Standard/VertexPlasma"
         CGPROGRAM
         #pragma surface surf Standard vertex:vert fullforwardshadows
         #pragma target 3.0
-        // #pragma vertex vert
         
         #include "UnityCG.cginc"
         #include "UnityLightingCommon.cginc"
